@@ -1,0 +1,84 @@
+* {
+  margin: 2%;
+}
+body {
+  color: red;
+  background-color: black;
+}
+main {
+  border: 3px solid brown;
+}
+h1 {
+  color: greenyellow;
+}
+
+header {
+  border: 3px solid white;
+}
+
+#green-background {
+  background-color: lightblue;
+  font-style: oblique;
+}
+
+a {
+  color: rgb(27, 23, 27);
+  font-style: italic;
+}
+#method {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(27, 9, 185);
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 5%;
+}
+
+img {
+  height: 150px;
+  width: 250px;
+  border: 3px solid rgb(39, 3, 3);
+}
+footer {
+  font-size: 20px;
+  border: 3px solid orangered;
+  padding: 10px 5px 0px 100px;
+  color: aliceblue;
+}
+#ingrediant {
+  border: 2px solid palevioletred;
+  background-color: white;
+  padding: 10px 5px;
+}
+#google {
+  margin: 0 auto;
+}
+.moresoep li {
+  text-decoration: none;
+  display: inline;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-color: grey;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    color: white;
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #method {
+    inline-size: 350px;
+    color: indigo;
+  }
+}
