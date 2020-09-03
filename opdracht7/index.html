@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Een groter formulier</title>
+    <link rel="stylesheet" href="contact.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Contact formulier</h1>
+    <main class="lab">
+      <form name="index" method="POST" data-netlify="true">
+        <label>Your Name: <input type="text" name="name" /></label> <br />
+        <label>Your Email: <input type="email" name="email" /></label><br />
+        <label
+          >Your telephone number: <input type="number" name="number" /></label
+        ><br />
+        <label>Age: <input type="number" name="number" /></label><br />
+        <label>Date of Birth: <input type="date" name="date" /></label><br />
+        <label
+          >Gender : <input type="radio" name="radio" />male
+          <input type="radio" name="radio" />female
+        </label>
+        <br />
+        <label
+          >favorite cuisine: <input type="checkbox" name="checkbox" />french
+          <input type="checkbox" name="checkbox" />arabic
+          <input type="checkbox" name="checkbox" />italian
+          <input type="checkbox" name="checkbox" />spanish
+        </label>
+        <br />
+        <label>favorite color:<input type="color" name="color" /></label>
+        <br />
+
+        <label
+          >upload your latest recipe: <input type="file" name="file"
+        /></label>
+        <br />
+        <br />
+        <label
+          >url to your recipe website : <input type="url" name="url"
+        /></label>
+        <br />
+
+        <label>biography: <textarea name="message"></textarea></label><br />
+        <button type="submit">Send</button>
+        <br />
+        <button type="reset">reset</button>
+      </form>
+    </main>
+  </body>
+</html>

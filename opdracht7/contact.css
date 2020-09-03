@@ -1,0 +1,13 @@
+body {
+  background-color: orange;
+  font-style: initial;
+  text-align: left;
+}
+main {
+  border: 5px solid blue;
+
+  padding: 10px;
+}
+.lab label {
+  margin: 5px;
+}
