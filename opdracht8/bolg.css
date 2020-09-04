@@ -1,0 +1,10 @@
+.blogpost {
+  width: 300px;
+  border: 1px solid black;
+  flex-grow: unset;
+}
+.dog {
+  display: flex;
+  flex-direction: row;
+  flex-grow: initial;
+}
