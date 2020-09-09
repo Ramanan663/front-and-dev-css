@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  margin: 0;
+  font-family: "Open sans", sans-serif;
+  font-size: 16px;
+
+  background-color: lightsalmon;
+}
+
+.nav {
+  width: 100vw;
+  background-color: black;
+  margin: 0;
+}
+#topper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  height: 3em;
+  padding: 0;
+}
+#topper #child {
+  padding-right: 2em;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+#child:first-child {
+  margin-right: auto;
+  margin-left: 2em;
+}
+
+#main1 {
+  width: 100vw;
+  background-color: lightskyblue;
+  margin: 0;
+}
+#main1 ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  height: 3em;
+  padding: 0;
+}
+
+#main1 ul li {
+  padding-right: 2em;
+  font-weight: bold;
+  color: #eceff1;
+  margin-left: 2em;
+}
+#main1 ul a {
+  text-decoration: none;
+}
+#main2 {
+  display: flex;
+  height: 650px;
+  background-image: url(yoga.jpg);
+  background-size: cover;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+#main2 h1 {
+  color: rgb(95, 13, 209);
+  font-size: 120px;
+}
+#main2 h2 {
+  color: rgb(14, 2, 31);
+  font-size: 50px;
+}
+#main2 h3 {
+  color: rgb(14, 2, 31);
+  font-family: "Playball", cursive;
+}
+#main2 label {
+  color: rgb(14, 2, 31);
+  font-size: 30px;
+}
+#bottem-grid {
+  border-radius: 5px;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "main3 main3 main4 main4"
+    "contant0 contant0 contant0 contant0"
+    "contant1 contant1 contant2 contant2"
+    "contant3 contant3 contant4 contant4"
+    "footer footer footer footer";
+
+  margin-left: 100px;
+}
+
+#main3 {
+  grid-area: main3;
+
+  padding-right: 15px;
+}
+#main4 {
+  grid-area: main4;
+}
+#contant0 {
+  grid-area: contant0;
+  font-family: "Playball", cursive;
+}
+#contant1 {
+  grid-area: contant1;
+}
+#contant2 {
+  grid-area: contant2;
+}
+#contant3 {
+  grid-area: contant3;
+}
+#contant4 {
+  grid-area: contant4;
+}
+footer {
+  height: 100px;
+  grid-area: footer;
+  display: grid;
+  grid-auto-flow: column;
+  font-family: cursive;
+  font-size: 25px;
+  grid-gap: 20px;
+  padding-top: 5%;
+  align-content: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+#main3 h3 {
+  font-size: 30px;
+  font-family: "Playball", cursive;
+}
+/*contactform*/
+#lable {
+  margin: 20px;
+  display: grid;
+  grid-gap: 50px;
+}
+/*about.html*/
+#about {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 10px;
+  grid-template-areas:
+    "Beginer Beginer"
+    "Medition Medition"
+    "Tips Tips"
+    "karma Bakthi"
+    "kiriya Gana"
+    "Risk Risk"
+    "blogs blogs";
+}
+
+#Beginer {
+  background-color: lightskyblue;
+  grid-area: Beginer;
+}
+#Medition {
+  background-color: lightskyblue;
+  grid-area: Medition;
+}
+#Tips {
+  background-color: lightskyblue;
+  grid-area: Tips;
+}
+#Bakthi {
+  background-color: lightskyblue;
+  grid-area: Bakthi;
+}
+#karma {
+  background-color: lightskyblue;
+  grid-area: karma;
+}
+
+#kiriya {
+  background-color: lightskyblue;
+  grid-area: kiriya;
+}
+#Gana {
+  background-color: lightskyblue;
+  grid-area: Gana;
+}
+#Risk {
+  background-color: lightskyblue;
+  grid-area: Risk;
+}
+#blogs {
+  background-color: lightskyblue;
+  grid-area: blogs;
+}
+
+@media only screen and (max-width: 550px) {
+  #bottem-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 0.5fr;
+    grid-template-areas:
+      " main3"
+      "main4"
+      "contant0"
+      "contant1"
+      "contant2"
+      "contant3"
+      "contant4"
+      "footer";
+    grid-gap: 0.2rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr 0.5fr;
+    grid-template-areas:
+      "Beginer"
+      "Medition"
+      "Tips"
+      "karma"
+      "Bakthi"
+      "kiriya"
+      "Gana"
+      "Risk"
+      "blogs";
+    grid-gap: 0.2rem;
+  }
+}
